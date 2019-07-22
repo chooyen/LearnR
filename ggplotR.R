@@ -7,4 +7,4 @@
 
 library(tidyverse)
 
-glimpse(diamonds
+glimpse(diamonds)
