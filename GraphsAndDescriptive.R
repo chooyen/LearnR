@@ -86,3 +86,10 @@ axis(side = 1,at=c(7,12.3,15),labels = c("sev","median","15"))
 
 axis(side = 2,at=c(55,65,75),labels = c("55","65","75"),las=2)
 box()
+
+#Adding Legends
+plot(LungCap[Smoke=="no"]~Age[Smoke=="no"],main="scatter plot",col=4,
+     xlab="Age",ylab = "LungCap",pch=16)
+points(LungCap[Smoke=="yes"]~Age[Smoke=="yes"],col=2,pch=17)
+ legend(x=3.5,y=14,adj = 0,legend = c("Non-smoker","Smoker"),
+        col=c(4,2),pch=c(16,17),bty = "n")
